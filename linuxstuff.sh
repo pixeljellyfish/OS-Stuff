@@ -48,13 +48,33 @@ echo updating apt repos
 sudo apt update
 wait
 echo installing checkra1n package
-sudo apt install checkra1n
+sudo apt install checkra1n -y
 wait
 #install alva design studio
-echo cding into Downloads folder...
-cd ~/Downloads
+# echo cding into Downloads folder...
+# cd ~/Downloads
+# wait
+# echo correcting permissions to Alva...
+# chmod a+x ./Alva-0.9.1.AppImage
+# echo running Alva
+# ./Alva-0.9.1.AppImage
+#cd to home folder
+echo cding to home folder...
+cd
+# install hacking tools
+echo installing git
+sudo apt-get install git
 wait
-echo correcting permissions to Alva...
-chmod a+x ./Alva-0.9.1.AppImage
-echo running Alva
-./Alva-0.9.1.AppImage
+echo installing katoolin
+git clone https://github.com/LionSec/katoolin.git  && cp katoolin/katoolin.py /usr/bin/katoolin
+wait
+echo setting katoolin permissions
+chmod +x /usr/bin/katoolin
+echo running katoolin
+katoolin
+wait
+echo finishing everything up 
+apt full-upgrade -y
+wait
+echo DONE.
+exit 
