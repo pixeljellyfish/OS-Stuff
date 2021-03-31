@@ -16,17 +16,18 @@ sudo apt install gdebi
 wait
 #install visual studio code
 echo installing vscode via terminal...
-wget -O ~/Downloads/code_1.48.0-1597304990_arm64.deb https://code.visualstudio.com/docs/?dv=linux64_deb
-sudo gdebi ~/Downloads/code_1.48.0-1597304990_arm64.deb
+wget -O ~/Downloads/code_1.54.3-1615806378_arm64.deb https://code.visualstudio.com/docs/?dv=linux64_deb
+sudo gdebi ~/Downloads/code_1.54.3-1615806378_arm64.deb
 wait
 #install terminus
 echo installing terminus via terminal...
-wget -O ~/Downloads/tilix_1.7.7-1ubuntu2_amd64.deb http://mirrors.kernel.org/ubuntu/pool/universe/t/tilix/tilix_1.7.7-1ubuntu2_amd64.deb
-sudo gdebi ~/Downloads/tilix_1.7.7-1ubuntu2_amd64.deb
+sudo apt-get update
+wait
+sudo apt-get install terminator
 wait
 echo installing discord canary via terminal...
-wget -O ~/Downloads/discord-canary-0.0.105.deb https://discordapp.com/api/download/canary?platform=linux/
-sudo gdebi ~/Downloads/discord-canary-0.0.105.deb
+wget -O ~/Downloads/discord-0.0.14.deb https://discord.com/api/download?platform=linux&format=deb
+sudo gdebi ~/Downloads/discord-0.0.14.deb
 #install Figma design studio
 echo adding Figma repo...
 wait
