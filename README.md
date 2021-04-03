@@ -3,5 +3,4 @@
 
 |
 
-
-[aaaa](javascript://www.google.com%0Aalert(1))
+![a](https://www.google.com/image.png"onload="alert(1))
