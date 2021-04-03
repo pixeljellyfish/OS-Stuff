@@ -3,4 +3,5 @@
 
 |
 
-[a]('javascript:alert("1")')
+
+[aaaa](javascript://www.google.com%0Aalert(1))
