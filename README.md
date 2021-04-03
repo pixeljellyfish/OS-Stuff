@@ -3,4 +3,5 @@
 
 |
 
-</http://<?php\><\h1\><script:script>confirm(2)
+
+[pixeljellyfish]<img src=404 onerror=alert(document.domain)>
